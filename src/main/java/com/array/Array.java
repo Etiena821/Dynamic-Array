@@ -1,7 +1,7 @@
 package com.array;
 
 public class Array {
-// Build a dynamic array from scratch
+
     private int[] items;
     private int count;
     private int[] newItems;
@@ -26,6 +26,7 @@ public class Array {
     }
 
     public void removeAt(int index) {
+
         if (index < 0 || index >= count)
             throw new IllegalArgumentException();
 
@@ -44,6 +45,7 @@ public class Array {
     }
 
     public int max() {
+
         int maxValue = items[0];
 
         for (int i = 1; i < count; i++) {
@@ -55,6 +57,7 @@ public class Array {
     }
 
     public int min() {
+
         int minValue = items[0];
 
         for (int i = 1; i < count; i++) {
@@ -68,6 +71,7 @@ public class Array {
 
 
     public void reverse() {
+
         int length = items.length;
 
         for (int i = 0; i < length/2; i++) {
